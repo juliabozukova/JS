@@ -1,0 +1,25 @@
+<html>
+    <body bgcolor="#E6E6FA">
+        <h2>Produit de deux nombres</h2>
+        <label for="premier-number">Entrez le premier nombre:</label>
+        <input type="number" id="first-number" />        
+        <label for="second-number">Entrez le deuxième nombre:</label>
+        <input type="number" id="second-number" />
+        <input type="button" value="Calculate" onclick="calculate()" />
+        <br /><br /><br />
+        <label for="product">Produit:</label>
+        <input type="number" id="product" />
+        <br />
+
+        <script>
+            //Trouver le produit de deux nombres
+            function calculate(){
+                let firstNumber = document.getElementById("first-number").value;
+                let secondNumber = document.getElementById("second-number").value;
+                document.getElementById("product").value = firstNumber * secondNumber;
+            }
+
+            
+        </script>
+    </body>
+</html>
